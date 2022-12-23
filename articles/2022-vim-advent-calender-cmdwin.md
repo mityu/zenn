@@ -3,7 +3,7 @@ title: "Command-line window がちょっと便利になるかもしれない設�
 emoji: "👏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vim", "neovim"]
-published: false
+published: true
 ---
 
 :::message
