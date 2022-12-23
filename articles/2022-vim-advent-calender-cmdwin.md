@@ -1,5 +1,5 @@
 ---
-title: "Command-line window をより自分好みにするための設定集"
+title: "Command-line window がちょっと便利になるかもしれない設定集"
 emoji: "👏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vim", "neovim"]
