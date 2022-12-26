@@ -4,6 +4,7 @@ emoji: "👏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vim", "neovim"]
 published: true
+publication_name: "vim_jp"
 ---
 
 :::message
@@ -17,7 +18,7 @@ Command-line window とはなんでしょう？
 
 cmdwin のもうちょっと踏み込んだ導入については、[ちょうど今年の Vim Advent Calender 2022 に Command-line window についての記事がある](https://qiita.com/kaitat/items/4083003370a283bd2605)ので、そちらに譲りたいと思います。`:` で常に Command-line window を開くようにする設定なども紹介されているので是非どうぞ。またあるいは、「help だ、Vim の help を寄越せ！」という方は `:h cmdwin` を参照してください。
 
-では、この記事では、Command-line window 生活がより便利になるかもしれない設定（小ネタという方が良いかもしれない）をいくつか紹介したいと思います。
+では、この記事では、Command-line window 生活がより便利になるかもしれない設定（小ネタというほうが良いかもしれない）をいくつか紹介したいと思います。
 
 :::message
 ~~ぶっちゃけタイピングがだるいのと~~字面的に少々間延びしてしまうので、以下では Command-line window を cmdwin と表記します。
