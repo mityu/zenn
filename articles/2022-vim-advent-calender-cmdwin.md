@@ -8,7 +8,7 @@ publication_name: "vim_jp"
 ---
 
 :::message
-この記事は [Vim Advent Calender 2022（その２）](https://qiita.com/advent-calendar/2022/vim)の23日目の記事です。
+この記事は [Vim Advent Calendar 2022（その２）](https://qiita.com/advent-calendar/2022/vim)の23日目の記事です。
 :::
 
 ### はじめに
