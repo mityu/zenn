@@ -11,7 +11,7 @@ publication_name: "vim_jp"
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 2023/5/31 の記事です。
 前回の記事は [uga-rosa](https://zenn.dev/uga_rosa) さんの「[ddu.vimにちゃんと入門した話](https://zenn.dev/uga_rosa/articles/f55be75a573c0b)」という記事でした。
-次回の記事は 6/2 に投稿される予定です。
+次回の記事は staticWagomU さんの [キーマッピングを設定しないVimmerが居たっていい](https://wagomu.me/blog/2023-06-02-vim-ekiden) です。
 :::
 
 ### デモ
