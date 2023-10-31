@@ -9,7 +9,7 @@ publication_name: "vim_jp"
 
 ::: message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 2023/10/30 の記事です。
-前回の記事は atusy さんの「[テキストの折り畳みを彩る vim.treesitter.foldtext() を使ってみる](https://vim-jp.org/ekiden/#article-2023-10-27)」でした。
+前回の記事は atusy さんの「[テキストの折り畳みを彩る vim.treesitter.foldtext() を使ってみる](https://blog.atusy.net/2023/10/26/treesitter-foldtext/)」でした。
 次回の記事は 11/1 に投稿される予定です。
 :::
 
