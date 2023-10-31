@@ -22,7 +22,7 @@ publication_name: "vim_jp"
 ```bat:drop.bat
 @echo off
 if "%VIM_TERMINAL%" == "" goto :EOF
-powershell -Command "$ESC=[char]27;$END=[char]7;echo ""${ESC}]51;[`"""call`""", `"""Tapi_drop`""", [`"""%cwd%`""", `"""%1`"""]]${END}"""
+powershell -Command "$ESC=[char]27;$BEL=[char]7;echo ""${ESC}]51;[`"""call`""", `"""Tapi_drop`""", [`"""%cwd%`""", `"""%1`"""]]${BEL}"""
 ```
 
 cmd.exe の echo コマンドでは `<ESC>` 等が出力できないようなので、Terminal API を叩くのに PowerShell のワンライナーを使っています。なお、このワンライナーは vim-jp で教えていただきました。感謝。
