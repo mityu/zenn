@@ -22,7 +22,7 @@ publication_name: "vim_jp"
 
 ```bash
 function update-softwares() {
-    local password=''
+	local password=''
 	sudo -k  # Reset sudo credential cache
 	echo -n 'Password:'; read -s password;
 	while ! sudo -Svp '' &> /dev/null <<< $password; do
