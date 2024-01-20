@@ -1,6 +1,6 @@
 ---
 title: "Vim/Neovim でカーソル下のハイライトの情報を表示する"
-emoji: "🐷"
+emoji: "🔦"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vim"]
 published: true
