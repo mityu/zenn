@@ -8,7 +8,9 @@ published_at: 2024-01-26 00:00
 publication_name: "vim_jp"
 ---
 
-この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) 2024/1/26 の記事です。
+この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 2024/1/26 の記事です。
+前回の記事は[たけてぃ](https://vim-jp.org/ekiden/runners/takeokunn/)さんの「[2023年のorg-mode活用と今後の抱負](https://www.takeokunn.org/posts/permanent/20240112071806-my_relationship_with_org_mode_in_2023_and_how_navigate_in_2024/)」でした。
+次回の記事は 2024/1/29 に投稿される予定です。
 
 # 成果物
 
