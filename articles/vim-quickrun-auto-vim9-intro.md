@@ -9,11 +9,13 @@ publication_name: "vim_jp"
 
 ::: message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 2025/2/24 の記事です。
+前回の記事は [kamecha](https://zenn.dev/kamecha) さんの「[VimConfに行ってきた](https://trap.jp/post/2406/)」でした。
+次回の記事は、[輪ごむ](https://zenn.dev/wagomu) さんの「[今夜はminiとsnacksで決まり！](https://wagomu.me/blog/2025-02-26-vim-ekiden)」です。
 :::
 
 # 導入
 
-quickrun.vim (https://github.com/thinca/vim-quickrun) は、thinca さん作のプラグインで、バッファに書かれたプログラムの全体や一部を簡単に実行できるプラグインです。
+quickrun.vim (https://github.com/thinca/vim-quickrun) は、[thinca](https://zenn.dev/thinca) さん作のプラグインで、バッファに書かれたプログラムの全体や一部を簡単に実行できるプラグインです。
 そして当然(？) Vim script や Vim9 script も実行できるのですが、Vim9 script 絡みでちょっと問題があり、Vim9 script で書いたスクリプトの一部を範囲選択して実行しようとすると、ちょっと面倒な場合があります。
 例えば、以下のプログラムで `def F()` 〜 `F()` の行を範囲選択して quickrun で実行しようとすると、
 `vim9script` コマンドが選択部分に含まれなくなるため、スクリプトが legacy Vim script だと認識されてエラーになってしまいます:
