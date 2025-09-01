@@ -87,7 +87,25 @@ quickrun-hook-auto_run_in_vim9 は quickrun の hook 機能を使ってスクリ
 1. 実行するスクリプトが Vim9 script であれば、スクリプトの先頭に `vim9script` コマンドが存在するかを調べる
 1. 実行するスクリプトの先頭に `vim9script` コマンドがなければ、実行するスクリプトを書き換えて `vim9script` コマンドを補う
 
-ということを行っています。
+ということを行っています。最初の例だと、選択したプログラム片は
+
+```vim
+def F()
+  echo 'Hello'
+enddef
+```
+
+でしたが、内部的に実際に実行されたプログラムは
+
+```vim
+vim9script
+def F()
+  echo 'Hello'
+enddef
+```
+
+になっていた、ということですね。
+
 このプラグインでは、1. の部分の、実行するコード片が Vim9 script かどうかを判定する部分がキモになるのですが、この部分は昔私が作った vital-vim9context という vital モジュール[^vital.vim]を利用しています (https://github.com/mityu/vital-vim9context)。vital-vim9context を使うと、Vim script 中の任意の箇所が legacy Vim script なのか Vim9 script なのかを判定することができるので、このプラグインを作るのにはうってつけでした。このプラグインでは、実行されるコード片の先頭の位置を指定して、その部分が legacy Vim script なのか Vim9 script なのかを判定させています。
 
 [^vital.vim]: vital.vim というのは、Vim script 向けのライブラリ群 (https://github.com/vim-jp/vital.vim) です。vital-vim9context は、この vital.vim 経由で扱えるライブラリ (vital モジュール) になります。
