@@ -35,9 +35,9 @@ i18n.inputMethod = {
 home-manager の `i18n.inputMethod.fcitx5.settings.inputMethod` オプションを設定します。
 https://mynixos.com/home-manager/option/i18n.inputMethod.fcitx5.settings.inputMethod
 
-上のページの説明を見れば書いてあるのですが、このオプションは、記述された内容で `~/.config/fcitx5/profile` の内容を置き換えます。
+上のページの説明を見ればわかるのですが、このオプションは、記述された内容で `~/.config/fcitx5/profile` の内容を置き換えます。
 この `~/.config/fcitx5/profile` というファイルは、fcitx5 が使用する入力ソースの情報をまとめたものなので、これを適当な内容に設定しておくことで、最初から mozc が有効になった状態の fcitx5 を手に入れることができます。
-言い換えると、このオプションで、上の `fcitx5-configtool` のスクリーンショットの "Input Method" タブの内容を設定できるということですね。
+言い換えると、このオプションで、上の `fcitx5-configtool` のスクリーンショットの "Input Method" タブの内容を Nix 側で設定できるということですね。
 
 実際にこのオプションに設定する値に関しては、一度 `fcitx5-configtool` で fcitx5 の設定を行ったあと、`~/.config/fcitx5/profile` を確認してその内容を Nix 式に書き起こす、という形で用意するのが一番手っ取り早いと思います。
 
@@ -68,7 +68,7 @@ i18n.inputMethod.fcitx5.settings.inputMethod = {
 };
 ```
 
-出力される `~/.config/fcitx5/profile` は以下のようになっています。
+この設定で、以下のような `~/.config/fcitx5/profile` が出力されます。
 
 ```:~/.config/fcitx5/profile
 [GroupOrder]
@@ -102,7 +102,7 @@ Nix あるあるの話だと言われるとそうかもしれないですね。
 
 # 余談1
 
-nixpkgs 側 (nixosConfigurations 側？) にも全く同じ fcitx5 オプションがあるので、home-manager 側ではなく nixpkgs 側でこの fcitx5 の設定を書いてインストールしてもうまくいくかもしれません（少なくともビルドは通りそうな雰囲気があります）。が、私は試していないので、実際に nixpkgs 側に設定を記述してうまいこといくのかはよくわかりません。
+nixpkgs 側 (flake の nixosConfigurations 側？) にも全く同じ fcitx5 オプションがあるので、home-manager 側ではなく nixpkgs 側でこの fcitx5 の設定を書いてインストールしてもうまくいくかもしれません（少なくともビルドは通りそうな雰囲気があります）。が、私は試していないので、実際に nixpkgs 側に設定を記述してうまいこといくのかはよくわかりません。
 とりあえず nixpkgs 側にも同じオプションがあるっぽいよ〜という情報だけ残しておきます。
 
 # 余談2
