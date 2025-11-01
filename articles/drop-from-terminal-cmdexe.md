@@ -15,6 +15,9 @@ publication_name: "vim_jp"
 
 今回の記事は先日書いた 「[:terminal から親の Vim でファイルを開く(bash/zsh編)](https://zenn.dev/vim_jp/articles/5fdad17d336c6d)」 という記事の続編になります。まだそちらを読んでいない方は、まずそちらから読んでもらった方が良いかと思います。また前回の記事同様、今回の話も Vim 限定のお話で Neovim では使えませんがご容赦ください。
 
+**追記**
+Neovim 対応版の記事を「[:terminal から親の Vim でファイルを開く(Neovim 編)](https://zenn.dev/vim_jp/articles/drop-from-terminal-neovim)」に書きました。Neovim ユーザーの方はこちらをどうぞ。
+
 # コマンドプロンプトでも drop コマンド使いたくなるよね
 
 前回の記事で :terminal で開いた bash や zsh から親の Vim でファイルを開く drop コマンドを実装しました。こうなると、Windows で Vim を使っているときにも :terminal で開いたコマンドプロンプトで drop コマンドを使いたくなるのが人情です。あれめっちゃ便利だし。というわけで次のように `drop.bat` を用意し、パスを通して試してみます。
@@ -107,3 +110,7 @@ vim --servername %VIM_SERVERNAME% --remote-send "<Cmd>call Tapi_drop(0, ['%cd%',
 # おわりに
 
 今回の記事は vim-jp におんぶにだっこでお送りしました。集合知というのは素晴らしいですね。
+
+# 追記
+
+(記事冒頭にも書きましたが) ここで紹介した `drop` コマンドを Neovim 対応させた記事を「[:terminal から親の Vim でファイルを開く(Neovim 編)](https://zenn.dev/vim_jp/articles/drop-from-terminal-neovim)」に書きました。Neovim ユーザーの方はこちらもどうぞ。
