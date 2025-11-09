@@ -59,7 +59,7 @@ local M = {}
 function M.tapi_drop(_bufnr, arglist)
   local cwd = arglist[1]
   local filepath = arglist[2]
-  if vim.fn.isabsolutepath(filepath) ~= 0 then
+  if vim.fn.isabsolutepath(filepath) == 0 then
     -- 絶対パスでない時は絶対パスに変換する
     filepath = vim.fs.joinpath(cwd, filepath)
   end
