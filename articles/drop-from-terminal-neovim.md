@@ -9,6 +9,8 @@ publication_name: vim_jp
 
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 2025/10/31 の記事です。
+前回の記事は peacock さんの 「[Gitを快適にVim/Neovimから操作するためのプラグイン(と設定) ](https://p3ac0ck.net/posts/20251029-my-vim-plugins-for-git/)」でした。
+次回の記事は ぺりー さんの「[Proposal を書く時に意識していること](https://satorunooshie.medium.com/how-to-create-proposals-8c4199dccc1a)」です。
 :::
 
 # 導入
